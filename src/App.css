@@ -1,38 +1,132 @@
-.App {
+@font-face {
+  font-family: "GmarketSans";
+  font-weight: normal;
+  src: url("./GmarketSansTTF/GmarketSansTTFBold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "GmarketSans";
+  font-weight: normal;
+  src: url("./GmarketSansTTF/GmarketSansTTFBold.ttf") format("ttf");
+}
+
+html, body {
+  font-family: "GmarketSans";
+  margin : 0px;
+  padding : 0px;
+  width : 96.375rem;
+  height : 63.3125rem;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.barcode {
+  padding: 221px 137px;
+}
+
+.title{
+  color: black;
+  font-size: 40px;
+  font-weight: 500px;
+  word-wrap: break-word;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.box {
+  display : flex;
+  padding-top : 80px;
+  width : 1100px;
+  height : 579px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.keyPad {
+  width : 25.125rem;
+  height : 36.1875rem;
+  display : flex;
+  flex-wrap: wrap;
+  gap:2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fir-pin {
+
+}
+
+.sen-pin {
+
+}
+
+.number {
+  display:inline-block;
+  width: 100px;
+  height : 100px;
+  padding : 10px;
+  background-color: #E6E6E6;
+  border-radius: 16px;
+  color: black;
+  font-size: 36px;
+  font-family: "Gmarket Sans";
+  text-align : center;
+}
+
+h2 {
+  font-size: 32px;
+  font-family: "Gmarket Sans";
+}
+
+.inputs {
+  width : 600px;
+  height : 447px;
+}
+
+.student-number {
+  width : 528px;
+  height : 100%;
+  border : none;
+  background-color: #E6E6E6;
+  border-radius: 8px;
+  padding-top : 16px;
+  padding-bottom : 16px;
+  padding-left: 36px;
+  padding-right: 36px;
+  font-family: "GmarketSansTTF-Medium";
+}
+
+input {
+  font-size : 24px;
+  color : #000000;
+  font-family: "GmarketSansTTF-Medium";
+  width : 600px;
+}
+
+.pins {
+  padding-top : 80px;
+}
+
+.pin-number {
+  width : 528px;
+  height : 100%;
+  border : none;
+  background-color: #E6E6E6;
+  border-radius: 8px;
+  padding-top : 16px;
+  padding-bottom : 16px;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+
+.submit-button {
+  background-color: #FFC20C;
+  border : none;
+  width : 600px;
+  font-size: 36px;
+  border-radius: 30px;
+  padding : 10px;
+  font-family: "Gmarket Sans";
+  margin-top : 80px;
 }
