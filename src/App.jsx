@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+// import App2 from "./App2.jsx";
 
 function App() {
   return (
@@ -11,17 +12,24 @@ function App() {
 
           <div className="keyPad">
 
-            <div className="fir-pin">
-              <span className="number">1</span>
-              <span className="number">2</span>
-              <span className="number">3</span>
+            <div className="pin">
+              <button className="number">1</button>
+              <button className="number">2</button>
+              <button className="number">3</button>
             </div>
-            <div className="sen-pin">
-              <span className="number">4</span>
-              <span className="number">5</span>
-              <span className="number">6</span>
+            <div className="pin">
+              <button className="number">4</button>
+              <button className="number">5</button>
+              <button className="number">6</button>
             </div>
-              <span className="number">7</span>
+            <div className="pin">
+              <button className="number">7</button>
+              <button className="number">8</button>
+              <button className="number">9</button>
+            </div>
+            <div className="for-pin">
+              <button className="number">0</button>
+            </div>
 
             </div>
 
@@ -34,11 +42,11 @@ function App() {
 
               <form className="pins">
               <h2>PIN 번호</h2>
-              <input type="password" className="pin-number" placeholder="PIN 번호를 입력해주세요"></input>
+              <input type="password" id="pin-number" placeholder="PIN 번호를 입력해주세요"></input>
               </form>
               
-              <button type="submit" className="submit-button">확인</button>
-
+              <button type="submit" className="submit-button" onClick={()=>{}}>확인</button>
+            {/* <App2/> */}
             </div>
         </div>
 
