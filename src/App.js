@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import App2 from "./App2";
+import { useNavigate } from "react-router-dom";
 
 const id = "2023049";
 const password = "123456";
@@ -8,8 +8,7 @@ const password = "123456";
 function App() {
   const [pinNumber, setPinNumber] = useState("");
   const [studentNumber, setStudentNumber] = useState("");
-  const [isStudent, setIsStudent] = useState(false);
-
+  const navigate = useNavigate();
 
   const handleStudentChange = (e) => {
     setStudentNumber(e.target.value);
@@ -21,22 +20,10 @@ function App() {
 
   const handleSubmit = (e) => {
     if(studentNumber === id && pinNumber === password){
-      setStudentNumber(true);
-      setIsStudent(!isStudent);
+      navigate("/check");
     }
     else alert("error");
   };
-
-  function check(props) {
-    return (
-      <div>
-        <div>
-          <img src="accept 1.png"s art="accept"/>
-          <h1 className="check">2018 이예흔 학생<br>잔액 3,780 원 조회되었습니다</br></h1>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="container">
@@ -97,7 +84,6 @@ function App() {
                 className="submit-button" 
                 onClick={handleSubmit}>확인
               </button>
-            {/* <App2/> */}
             </div>
         </div>
 

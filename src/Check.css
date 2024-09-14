@@ -1,0 +1,54 @@
+@import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  font-family: 'GmarketSansMedium';
+  margin : 0px;
+  padding : 0px;
+  width : 1541px;
+  height : 1013px;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.check-box {
+    display: block;
+    text-align: center;
+}
+
+  img {
+    width : 150px;
+    width : 150px;
+
+  }
+  
+  .check1 {
+    margin: 0;
+    margin-top:48px;
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+    word-wrap: break-word;
+    text-align: center;
+
+  }
+  
+  .check2 {
+    margin: 0;
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+    word-wrap: break-word;
+    text-align: center;
+  }
